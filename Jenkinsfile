@@ -1,6 +1,6 @@
 node {
     stage('Clone repository') {
-        git credentialsId: 'github_access_token', url: 'https://github.com/hylee-kevin/web-count.git'
+        git credentialsId: 'github_access_token', url: 'https://github.com/tmdwnsdl/web_count_jenkins.git'
     }
 
     stage('Build image') {
