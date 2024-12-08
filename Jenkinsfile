@@ -4,7 +4,7 @@ node {
     }
 
     stage('Build image') {
-       dockerImage = docker.build("seungjjun/web_count:v1.0", "--no-cache")
+       dockerImage = docker.build("seungjjun/web_count:v1.0", "--no-cache .")
     }
 
     stage('Push image') {
